@@ -16,7 +16,7 @@
   <p>Total items: {$cartInfo.totalItems}</p>
   {#each $cartInfo.items as item}
     <p>{item.name} - {item.quantity} - {item.quantity * item.price}</p>
-    <h3>Total money: {totalMoney}</h3>
+    <h3>Total money: ${totalMoney}</h3>
   {/each}
   <button disabled={!buttonEnable}>Buy now!</button>
   <!-- Show popup congrat on buying successfully! -->

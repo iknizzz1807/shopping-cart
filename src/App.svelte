@@ -7,13 +7,13 @@
 <main>
   <div class="container">
     <div class="items">
-      <h1>Deserts</h1>
+      <div class="title">Deserts</div>
       {#each items as item}
         <ShoppingCard currentCardInfo={item} />
       {/each}
     </div>
-    <div class="cart">
-      <h1>Cart</h1>
+    <div>
+      <div class="title">Cart</div>
       <Cart />
     </div>
   </div>
@@ -23,11 +23,12 @@
   .container {
     display: flex;
     flex-direction: row;
+    padding: 40px 40px;
   }
 
-  .cart {
-    text-align: center;
-    border-left: skyblue solid 4px;
+  .title {
+    font-size: 32px;
+    font-weight: 700;
   }
 
   .items {
